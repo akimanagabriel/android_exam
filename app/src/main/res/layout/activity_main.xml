@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        >
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Student marks"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Names"
+            android:layout_marginVertical="9dp"
+            android:textColor="@color/white"
+            android:textColorHint="#ABFFFFFF"
+            />
+        <EditText
+            android:id="@+id/regno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Registration number"
+            android:layout_marginVertical="9dp"
+            android:textColor="@color/white"
+            android:textColorHint="#ABFFFFFF"
+            />
+
+
+        <EditText
+            android:id="@+id/fa1marks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Marks FA1"
+            android:layout_marginVertical="9dp"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="#ABFFFFFF"
+            />
+
+        <EditText
+            android:id="@+id/fa2marks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Marks FA2"
+            android:layout_marginVertical="9dp"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="#ABFFFFFF"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:layout_marginVertical="9dp"
+            android:layout_gravity="center"
+            android:onClick="saveStudent"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="view data"
+            android:layout_marginVertical="9dp"
+            android:layout_gravity="center"
+            android:onClick="viewStudents"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>
