@@ -10,7 +10,7 @@ public class Student {
     private String decision;
 
     public String getNames() {
-        return names;
+        return names.trim();
     }
 
     public void setNames(String names) {
@@ -18,7 +18,7 @@ public class Student {
     }
 
     public String getRegNumber() {
-        return regNumber;
+        return regNumber.trim().toUpperCase();
     }
 
     public void setRegNumber(String regNumber) {
@@ -66,10 +66,10 @@ public class Student {
 
     @Override
     public String toString() {
-        return "NAMES: "+getNames()+"\n" +
+        return "\n"+getNames().toUpperCase()+"\n\n" +
                 "REG NUMBER: "+getRegNumber()+"\n" +
                 "F.A ONE: "+getFa1marks()+"%\n" +
                 "F.A TWO: "+getFa2marks()+"%\n" +
-                "DECISION: " +getDecision();
+                "DECISION: " +getDecision()+"\n";
     }
 }
