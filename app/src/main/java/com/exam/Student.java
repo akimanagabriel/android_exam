@@ -14,7 +14,7 @@ public class Student {
     }
 
     public void setNames(String names) {
-        this.names = names;
+        this.names = names.trim();
     }
 
     public String getRegNumber() {
@@ -22,7 +22,7 @@ public class Student {
     }
 
     public void setRegNumber(String regNumber) {
-        this.regNumber = regNumber;
+        this.regNumber = regNumber.trim().toUpperCase();
     }
 
     public float getFa1marks() {
